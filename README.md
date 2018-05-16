@@ -1,2 +1,2 @@
 # LSTM-Analysis
-Deep Learning Pproject
+Deep Learning Project
