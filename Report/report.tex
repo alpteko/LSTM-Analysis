@@ -58,7 +58,7 @@
 	i &= \sigma(W_i * x_{t} + R_i * h_{t-1} + b_i) \\
 	z &= \tanh(W_z * x_{t} + R_z * h_{t-1} + b_z) \\ 
 	o &= \sigma(W_o * x_{t} + R_o * h_{t-1} + b_o) \\
-	c_t &= c_{t-1}*- * z  \\
+	c_t &= c_{t-1} + i * z  \\
 	h_t &= tanh(c_t) * o
 \end{align*}
 \subsection{Only Output(O)}
@@ -367,7 +367,7 @@ Yarin Gal, Zoubin Ghahramani(2017).A Theoretically Grounded Application of Dropo
 \end{thebibliography}
 
 \section{Code}
-
+Code is also at https://github.com/claudiusalp/LSTM-Analysis.
 \subsection{Basic LSTM}
 \begin{verbatim}
 class LSTM_cell(object):
@@ -665,7 +665,7 @@ def process_batch_input_for_RNN(batch_input):
 
         return tf.stack([current_hidden_state,c])
 \end{verbatim}
-\subsection{ParityCheck Setup For all}
+\subsection{ParityCheck Setup}
 \begin{verbatim}
 hidden_layer_size = 1
 input_size = 1
@@ -754,7 +754,7 @@ plt.plot(np.reshape(hs,[-1,1]),label='H')
 plt.plot(x_,label='Input')
 plt.show()
 \end{verbatim}
-\subsubsection{MNIST Experiment}
+\subsection{MNIST Experiment Setup}
 \begin{verbatim}
 hidden_layer_size = 1
 input_size = 8
@@ -807,7 +807,7 @@ Test_accuracy=str(sess.run(accuracy,feed_dict={rnn._inputs:X_test, y:y_test}))
 print(Test_accuracy)
 
 \end{verbatim}
-\subsubsection{Sentiment Analysis Experiment}
+\subsection{Sentiment Analysis Experiment Setup}
 \begin{verbatim}
 hidden_layer_size = 64
 input_size = 50
@@ -875,7 +875,7 @@ for i in range(200):
     total_acc += acc
 print(total_acc/200)
 \end{verbatim}
-\subsubsection{Dependencies}
+\subsection{Dependencies}
 \begin{verbatim}
 import numpy as np
 import tensorflow as tf

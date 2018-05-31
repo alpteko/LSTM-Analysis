@@ -26,12 +26,12 @@
 \contentsline {subsection}{\numberline {6.1}Basic LSTM}{12}
 \contentsline {subsection}{\numberline {6.2}Modification on Basic LSTM}{16}
 \contentsline {subsubsection}{\numberline {6.2.1}F}{16}
-\contentsline {subsubsection}{\numberline {6.2.2}FO}{16}
+\contentsline {subsubsection}{\numberline {6.2.2}FO}{17}
 \contentsline {subsubsection}{\numberline {6.2.3}myFO}{17}
 \contentsline {subsubsection}{\numberline {6.2.4}IO}{18}
 \contentsline {subsubsection}{\numberline {6.2.5}O}{19}
-\contentsline {subsection}{\numberline {6.3}ParityCheck Setup For all}{20}
+\contentsline {subsection}{\numberline {6.3}ParityCheck Setup}{20}
 \contentsline {subsection}{\numberline {6.4}Visualizing Hidden States and Gates}{21}
-\contentsline {subsubsection}{\numberline {6.4.1}MNIST Experiment}{22}
-\contentsline {subsubsection}{\numberline {6.4.2}Sentiment Analysis Experiment}{23}
-\contentsline {subsubsection}{\numberline {6.4.3}Dependencies}{25}
+\contentsline {subsection}{\numberline {6.5}MNIST Experiment Setup}{22}
+\contentsline {subsection}{\numberline {6.6}Sentiment Analysis Experiment Setup}{23}
+\contentsline {subsection}{\numberline {6.7}Dependencies}{25}
